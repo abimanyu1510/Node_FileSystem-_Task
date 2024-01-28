@@ -4,7 +4,8 @@ import fs from 'fs';
 import path from 'path';
 
 
-const PORT=8000
+// const PORT=8000
+const PORT = process.env.PORT || 8000
 const app=express();
 
 app.use(express.json());
